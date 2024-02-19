@@ -5,7 +5,7 @@ This script allows you to pull data from HackTheBox and store it in Notion with 
 ## Requirements
 - [Python 3.x](https://www.python.org/downloads/)
 - [Notion API Credentials](https://www.notion.so/my-integrations)
-- [Hack The Box APp Token](https://app.hackthebox.com/profile/settings)
+- [Hack The Box App Token](https://app.hackthebox.com/profile/settings)
 
 ## Installation
 1. Clone this repository:
@@ -18,37 +18,71 @@ pip install -r requirements.txt
 ```
 3. Setup your Notion integration and get your API credentials.
     - Visit [Notion integration](https://www.notion.so/my-integrations)
+  
+      ![NotionIntegration-Step1](https://github.com/spllat-00/hackthebox-notion/assets/50944153/091f76d6-4033-4856-a85d-13e293595ad0)
+
     - Add to your required workspace
+    
     - Give the integration a name: `HackTheBox-Notion` (Can be anything as per user)
     - Add logo for easy access. (Logo provided in git repo)
     - Hit Submit
+  
+      ![NotionIntegration-Step2](https://github.com/spllat-00/hackthebox-notion/assets/50944153/83b86505-b5a0-4fd7-9cd7-f5fcbdf7195e)
+    
     - View your Secret, by click `show`
+  
+      ![NotionIntegration-Step3](https://github.com/spllat-00/hackthebox-notion/assets/50944153/68ba1fd2-cb37-4c28-a9b8-43976151716f)
+    
     - This is: `NOTIONTOKEN` in .env file
 
 4. Setup your Hack The Box App Token
     - Visit [Hack The Box Settings](https://app.hackthebox.com/profile/settings)
     - Click `Generate Identifier`
+  
+      ![HackTheBox-Step1](https://github.com/spllat-00/hackthebox-notion/assets/50944153/421705fd-f7a9-48b7-9ac8-8037651ddc09)
+    
     - Give it a name: `HackTheBox2Notion` (Can be anything as per user)
     - Set the expire time: `1 Year`
+  
+      ![HackTheBox-Step2](https://github.com/spllat-00/hackthebox-notion/assets/50944153/085015c5-fe82-41ea-8133-21bf7c4e51ff)
+    
     - Copy the App Token
+  
+      ![HackTheBox-Step3](https://github.com/spllat-00/hackthebox-notion/assets/50944153/302da8e1-4334-4e28-9e72-c0d18c9d815d)
+    
     - This is: `HTBTOKEN` in .env file
 
 5. Copy the template Hack The Box - Notion Template
     - Open the [Hack The Box - Notion Template](https://maroon-bobcat-3c4.notion.site/Hack-The-Box-Notion-Template-7ecd6321ffda4a3dad998ccbd36c6b9d?pvs=4)
     - Click `Duplicate` button on top-right
-    - Select the same workspace you created the Notion Integration.
+  
+      ![NotionTemplate-Step1](https://github.com/spllat-00/hackthebox-notion/assets/50944153/12741221-ae22-489c-8cdc-b2f1887efdce)
 
-6. Connect the newly created notion integration to the workspace
+    - Select the same workspace you created the Notion Integration.
+  
+      ![NotionTemplate-Step2](https://github.com/spllat-00/hackthebox-notion/assets/50944153/6b84d616-20ee-4009-969e-12201072cfc0)
+
+
+7. Connect the newly created notion integration to the workspace
     - Select `options` in top-right.
     - In `Connections > Connect to`, select: `HackTheBox-Notion`
-    - Hit Confirm
+  
+      ![NotionConnections-Step1](https://github.com/spllat-00/hackthebox-notion/assets/50944153/950a1c7c-63fb-4a7e-b3b4-550dffcc7348)
 
-7. Find the Database ID
+    - Hit Confirm
+  
+      ![NotionConnections-Step2](https://github.com/spllat-00/hackthebox-notion/assets/50944153/9530fa1f-6928-4613-9d67-8e4f05dcb64a)
+
+
+8. Find the Database ID
     - On the top-right, hit `Share`
+  
+      ![NotionDatabaseID-Step1](https://github.com/spllat-00/hackthebox-notion/assets/50944153/f8e2bef1-b6bd-497e-8251-31da00a52235)
+
     - It will be in this format: https://www.notion.so/Hack-The-Box-Notion-Template-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     - We need the `xxxxx` part, that should be of 32 characters
     - This is: `NOTIONDATABASEID`
-6. Update the `.env` file with `NOTIONTOKEN`, `HTBTOKEN` and `NOTIONDATABASEID`
+9. Update the `.env` file with `NOTIONTOKEN`, `HTBTOKEN` and `NOTIONDATABASEID`
 
 ## Usage
 Run the script
