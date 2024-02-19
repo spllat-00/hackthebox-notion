@@ -75,14 +75,18 @@ pip install -r requirements.txt
 
 
 8. Find the Database ID
-    - On the top-right, hit `Share`
+    - On the database of gallery, hit 6-dots
   
-      ![NotionDatabaseID-Step1](https://github.com/spllat-00/hackthebox-notion/assets/50944153/f8e2bef1-b6bd-497e-8251-31da00a52235)
+     ![NotionDatabaseID-Step1](https://github.com/spllat-00/hackthebox-notion/assets/50944153/8e202a35-0134-4a46-a761-1577f2880f17)
 
-    - It will be in this format: https://www.notion.so/Hack-The-Box-Notion-Template-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    - Select `Copy link`
+  
+     ![NotionDatabaseID-Step2](https://github.com/spllat-00/hackthebox-notion/assets/50944153/53156dae-d043-430b-9c0c-52464adcebed)
+
+    - It will be in this format: https://www.notion.so/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx?v=someOtherFormathere&pvs=4
     - We need the `xxxxx` part, that should be of 32 characters
     - This is: `NOTIONDATABASEID`
-9. Update the `.env` file with `NOTIONTOKEN`, `HTBTOKEN` and `NOTIONDATABASEID`
+9. Create a file with name `.env` file with `NOTIONTOKEN`, `HTBTOKEN` and `NOTIONDATABASEID` values from above
 
 ## Usage
 Run the script
