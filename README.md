@@ -96,10 +96,25 @@ python3 HTB2Notion.py
 
 > For checking the help, use flag: -h / --help
 
+## Screenshots
+1. Running of the script for new machines
+
+![RunningScript](https://github.com/spllat-00/hackthebox-notion/assets/50944153/d41293b6-d0e0-4e99-859b-4b094719ab9a)
+
+
+2. Template
+
+![NotionMachineTemplate-Step1](https://github.com/spllat-00/hackthebox-notion/assets/50944153/fedd862c-c0a9-4fd3-868b-29f102c0157a)
+
+![NotionMachineTemplate-Step2](https://github.com/spllat-00/hackthebox-notion/assets/50944153/062029b0-c4e7-4d74-a616-2588c008d0ae)
+
+![NotionMachineTemplate-Step3](https://github.com/spllat-00/hackthebox-notion/assets/50944153/026b5110-29b2-4029-bee1-fea274f241d8)
+
+
 ## Configuration
-- HTBTOKEN = HTB_JWT_Token
-- NOTIONTOKEN = Notion_Token
-- NOTIONDATABASEID = 32-bit-ID
+- HTBTOKEN=HTB_JWT_Token
+- NOTIONTOKEN=Notion_Token
+- NOTIONDATABASEID=32-bit-ID
 
 ## Contributing
 Contributions are welcome! Feel free to open issues or pull requests.
